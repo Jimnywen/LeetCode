@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.concurrent.CompletableFuture;
 
 public class Main {
     public int countConsistentStrings(String allowed, String[] words) {
@@ -21,6 +22,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        CompletableFuture.supplyAsync()
         System.out.println(new Main().countConsistentStrings("ab", new String[]{"ad", "bd", "aaab", "baa", "badab"}));
     }
 }
